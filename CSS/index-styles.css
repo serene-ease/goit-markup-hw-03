@@ -17,12 +17,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .link {
@@ -52,7 +53,7 @@ img {
 /* +++++++++++++++ header section styles +++++++++++++++ */
 header .container {
   height: 80px;
-  vertical-align: middle;
+  border-bottom: #ececec solid 0px;
 }
 
 nav,
@@ -63,6 +64,7 @@ nav,
 
 nav {
   align-items: center;
+  vertical-align: middle;
 }
 
 .site-nav > li:not(:first-child),
@@ -110,8 +112,8 @@ nav a {
   height: 600px;
   padding-top: 200px;
   background-color: var(--accent-background-color);
-  text-align: center;
   margin-bottom: var(--margin-near-section);
+  text-align: center;
 }
 .hero button {
   color: var(--third-text-color);
@@ -126,6 +128,8 @@ nav a {
 
   height: 50px;
   width: 200px;
+  border: none;
+  border-radius: 4px;
 }
 .hero h1 {
   color: var(--third-text-color);
@@ -135,9 +139,9 @@ nav a {
   letter-spacing: 0.06em;
   font-weight: 900;
 
-  text-align: Center;
-  max-width: 696px;
+  /* width: 696px; */
   margin-bottom: 30px;
+  /* outline: yellow solid 1px; */
 }
 
 /* About us styles */
@@ -189,7 +193,6 @@ nav a {
 }
 .features li + li {
   margin-left: 30px;
-  outline: 3px solid olive;
 }
 .features .container {
   padding-bottom: var(--margin-near-section);
