@@ -113,9 +113,11 @@ nav a {
 .portfolio ul {
   display: flex;
 }
+.portfolio {
+  padding-top: var(--margin-near-section);
+  padding-bottom: var(--margin-near-section);
+}
 .buttons {
-  margin-top: var(--margin-near-section);
-  margin-bottom: 50px;
   justify-content: center;
 }
 .buttons li + li {
@@ -129,7 +131,7 @@ nav a {
 }
 .examples {
   flex-wrap: wrap;
-  margin-top: -30px;
+  /* margin-top: -30px; */
   margin-left: -30px;
 }
 .examp-text {
