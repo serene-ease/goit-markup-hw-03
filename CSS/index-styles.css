@@ -54,7 +54,7 @@ img {
 }
 
 /* +++++++++++++++ header section styles +++++++++++++++ */
-header .container {
+header {
   height: 80px;
   border-bottom: #ececec solid 0px;
   display: flex;
@@ -108,11 +108,10 @@ nav a {
 /* Hero section styles*/
 .hero {
 }
-.hero .container {
+.hero {
   height: 600px;
   padding-top: 200px;
   background-color: var(--accent-background-color);
-  margin-bottom: var(--margin-near-section);
   text-align: center;
 }
 .hero button {
@@ -144,10 +143,13 @@ nav a {
 }
 
 /* About us styles */
+.about-us {
+  padding-top: var(--margin-near-section);
+  padding-bottom: var(--margin-near-section);
+}
 .about-us ul {
   display: flex;
   width: 270;
-  margin-bottom: var(--margin-near-section);
 }
 .about-us li {
   flex-basis: 100%;
@@ -192,12 +194,12 @@ nav a {
 .features li + li {
   margin-left: 30px;
 }
-.features .container {
+.features {
   padding-bottom: var(--margin-near-section);
 }
 /* Our Team Section Styles */
 
-.our-team .container {
+.our-team {
   padding-top: var(--margin-near-section);
   padding-bottom: var(--margin-near-section);
   background-color: var(--secondary-background-color);
@@ -217,10 +219,7 @@ nav a {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-.card-text,
-.our-team img {
-  /* box-shadow: 0 1px 1px 1px #ccc; */
-}
+
 .name {
   color: var(--primary-text-color);
   font-size: 16px;
@@ -238,7 +237,7 @@ nav a {
 }
 
 /* +++++++++++++++ Footer section styles +++++++++++++++ */
-footer .container {
+footer {
   background-color: var(--accent-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -249,6 +248,9 @@ address a {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+}
+address li + li {
+  margin-top: 9px;
 }
 address li:first-child a {
   color: var(--third-text-color);
